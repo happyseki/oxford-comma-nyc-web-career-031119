@@ -4,12 +4,8 @@ def oxford_comma(array)
   elsif array.length == 2
    return array.join(" and ")
  else
-   output = ""
-   array.each do |element, i|
-     output << "#{element}, "
-     output += "and #{array.last}"
-   end
-   
-   return output
+ output = array[0..-2].join(", ")
+ last = " and #{array[-1]}"
+ output << last
  end
 end
