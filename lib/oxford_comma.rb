@@ -8,6 +8,6 @@ def oxford_comma(array)
    array.each do |element, i|
      output += "#{element}, "
    end
-   return 
+   return output
  end
 end
