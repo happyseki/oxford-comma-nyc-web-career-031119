@@ -6,7 +6,7 @@ def oxford_comma(array)
  else
    output = ""
    array.each do |element, i|
-     output += "#{element}, "
+     output << "#{element}, "
      output += "and #{array.last}"
    end
    
