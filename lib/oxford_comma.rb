@@ -4,8 +4,9 @@ def oxford_comma(array)
   elsif array.length == 2
    return array.join(" and ")
  elseif
+   output = ""
    array.each do |element, i|
-     array[i]
+     output += "#{element}, "
    end
    return 
  end
