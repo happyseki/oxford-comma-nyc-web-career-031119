@@ -4,7 +4,7 @@ def oxford_comma(array)
   elsif array.length == 2
    return array.join(" and ")
  elseif
-   array.each do |i|
+   array.each do |element i|
    return 
  end
 end
